@@ -1,0 +1,68 @@
+% Nutrition is a crucial part of healthy living, however, individuals often struggle to understand and make healthy choices. Past HCI work, particularly in health, has shown the power of gamification in promoting engagement with and understanding of complex information. Leveraging gamification techniques (avatars and crowdsourced feedback) to help people engage with nutrition, we developed Monster Munch, a mobile application where users help monster avatars achieve a particular health goal (e.g., lose weight) by selecting crowdsourced “in-the-wild” meals to feed them. We piloted Monster Munch (N=68) and found users' confidence assessing macronutrients increased after using the app. Strong player-avatar-identification (PAID) and increased utilization of the crowdsourced community board were related to users' enjoyment of the app. Interestingly, lower PAID predicted greater recall of nutrition information, independent of prior nutrition knowledge. Findings suggest PAID may be an important mechanism in learning and highlights how fun, lightweight tools can prompt reflection and recall.
+
+
+
+\section{Introduction}
+Unhealthy eating contributes to the obesity epidemic in the United States, which affects 12 million American adolescents and 38\% of adults \cite{trustforamericashealth,cdc2015,cdc2020}. 
+%The estimated annual medical cost of obesity exceeded \$147 billion dollars in 2008 [PLACE UPDATED REF]~\cite{ }. 
+There are many reasons why people eat unhealthfully; one of such reasons commonly highlighted by previous research is low nutritional literacy, and, specifically, limited ability to accurately estimate nutritional composition (i.e., macronutrient content) of a given meal~\cite{kindig2004health}. 
+% Nutritional literacy and the ability to estimate macronutrients in meals is particularly important for self-management of chronic conditions such as diabetes, kidney disease, and cardiovascular diseases. Managing these conditions often requires dietary restrictions, for example of salt, proteins, or carbohydrates, and other nutrients. However, in order to carry out these restrictions, an individual needs to be able to identify and estimate these nutrients in foods. In the context of diabetes self-management, the ability to estimate inclusion of different macronutrients, particularly carbohydrates (sometimes referred to as ``carb counting''), in a meal can directly impact glycemic control and one's wellbeing~\cite{schillinger2002association,sheard2004dietary}.
+While crucial for self-management of chronic conditions such as diabetes and kidney disease, previous studies have shown that estimating nutrition in meals presents considerable challenges. For example, low-literacy populations often have difficulty interpreting Nutrition Fact Labels often leading to miscalculation of the amount of consumed nutrients \cite{chaudry2013formative,huizinga2009literacy,rothman2006patient}. Even professional dietitians 
+%can have difficulty making accurate nutritional estimations. Expert dietitians tend to underestimate portions, and therefore calories, of large meals
+~\cite{chandon2007obesity} and healthy eaters often underestimate calories in meals~\cite{chandon2007biasing}. Complex meals such as salads and their dressings with many components 
+%and ingredients 
+add another layer of difficulty with nutritional assessment~\cite{noronha2011platemate}.
+ 
+
+% CONSEQUENCES OF not being able to estimate nutrition: 
+% Studies have also shown that there is a strong correlation between low health literacy and low Health Eating Index scores, high sugar-sweetened beverage consumption, and high risk for disease and disability \cite{berkman2004literacy,zoellner2011health}. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INTRODUCE LATER:
+% \textit{\textbf{In this research, we developed a new solution to help people quickly estimate carbohydrates in meal photos by providing compositionally similar, user-generated, comparison meal photos and their evaluations, as benchmarks for estimating nutrition in their own meal.}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Many people track their food and dietary habits for weight loss, sports training, management of chronic diseases, or food allergies. However, 
+Due to the difficulty in nutritional estimation %such as carb counting in meals, 
+as well as huge burdens on the users with self-tracking and food journaling with common apps, people develop short-lived commitments to these apps and often are fatigued with their usage, which leads to complete abandonment of the app and self-tracking habits~\cite{choe2014understanding,Cordeiro:2015:RMF:2702123.2702154,cordeiro2015barriers,epstein2016crumbs,mattila2008mobile}.
+% people usually refer to professionals and experts, which is costly and labor-intensive. People also find unreliable information online and are often misinformed about nutritional data and diet fads \cite{williamson2000recommendations}. 
+Recognizing such challenges, there emerged a variety of interactive solutions for simplifying and gamifying nutritional assessment of meals captured in the context of diet tracking and behavior changes. Some solutions rely on automating the process of adding food items into the platform or app in use through barcode scanning and selecting meals or ingredients from existing databases~\cite{beijbom2015menu,bomfim2018pirate,bomfim2020food,siek2009evaluation}, lightweight social interactive challenges~\cite{Cordeiro:2015:RMF:2702123.2702154,epstein2016crumbs}, 
+computational image analysis~\cite{anthimopoulos2015computer,kong2012dietcam,rhyner2016carbohydrate,zhang2015snap,zhu2010use}, crowdsourcing~\cite{mamykina2011examining,noronha2011platemate}, and tamagotchi-style avatar based nurturing~\cite{byrne2012caring,hwang2017monster,lin2006fish}.
+
+In this feasibility-focused, pilot study, we tested gamification features that have received relatively positive user feedback respectively, but have not been mixed together due to challenges in current approaches to nutritional assessment, food journaling, and access to ``in-the-wild'' crowdsourced meal photographs. Specifically, we developed a mobile application, Monster Munch, where users help a self-selected monster avatar with a particular health goal (e.g., aiming to run a marathon).The health goal is achieved through selecting meals to feed one's pet avatar through a crowdsourced “in-the-wild” meal photograph mechanism where photos are provided by the crowd and evaluated by the crowd via voting and text-based reasoning~\ref{SOME FIGURE HERE}. Our work examines gamification and social features in the context of nutrition, reconsidering the common assumption that nutrition literacy cannot be delivered in an engaging, fun, and personalized fashion. 
+
+%However, despite ongoing active investigations, there are few easy to use robust solutions that can help reduce the burden of and increase accuracy of arriving at nutritional estimates, let alone a fun and engaging solution. 
+\textcolor{orange}{@Pooja, I know in the past with GlucOracle users, there were reports about how it's too many things to enter and maybe ``not fun'' to keep track of meals. Do we have those interview responses in a paper somewhere?? It's not in your Personal Oracle paper, is it?} \textcolor{blue}{\cite{papastergiou2009exploring} gotta cite and look at ``Exploring the potential of computer and video games for health and physical education: A literature review'' from 2009. DEFINITELY CITE Gamification for health and wellbeing: A systematic review of the literature from 2015.~\cite{johnson2016gamification}}
+
+
+% \cite{noronha2011platemate} PlateMate needs to be mentioned somewhere JUST FYI !!!  an application where once users upload pictures of their meals, they can receive crowdsourced estimates of nutritional facts. 
+
+% This is from the famous FOGARTY group ``We discuss mismatches
+% between motivations and current designs, challenges of
+% current approaches to food journaling, and opportunities for
+% photos as an alternative to the pervasive but often inappropriate
+% emphasis on quantitative tracking in mobile food journals.'' --- we should take a similar approach.~\cite{Cordeiro:2015:RMF:2702123.2702154} ``Our work examines lightweight photo-based capture and
+% reflection, reconsidering the common assumption that a
+% quantitative approach is required.''
+
+
+% We wanted to investigate a different and fun approach to facilitating nutritional literacy and to helping individuals become better at estimating nutrition in meals through leveraging social computing platforms. With the growing popularity of social technologies for diet monitoring and management, there exist vast online collections of meals captured by various individuals across times and geographic locations. Posting one's meals on social media, such as Facebook, Instagram, TikTok, Yelp, Hipstamatic, or Foodspotting has become a widely adopted practice. Interestingly, these meal photos are often tagged with locations, descriptions, and ingredients. There is an untapped opportunity to utilize these collections of user-generated meal photos and their tagged information to educate the public on nutritional composition of real-life, ``in-the-wild'' meals. 
+
+% In this research, we created a game, Meals for Monsters, where each player chooses a monster avatar with a specific health goal (e.g., run a marathon, lose weight, etc.) and in order to achieve that health goal, he/she receives a specific macronutrient nutritional goal. For example, if the player chose the health goal of ``run a marathon,'' the associated macronutrient goal is to increase carbohydrates. Players have to feed their monster avatar (in a tamagotchi style~\ref{ }--REF USED IN CRII) a meal that fits such a macronutrient goal among the available options. The social computing aspect comes in 
+%when the player sees the community board where the crowd has voted and reasoned with what the crowd considered the ``best meal'' of the available options. Based on what the player feeds her/his monster avatar, the avatar will react positively or negatively. 
+
+In our controlled pilot experiment (N=68),  %where we split the group in half based on their education level (up to high school -- low education users -- vs. some college and above -- high education users) for a between subjects model. 
+we observed that users' self-reported confidence in assessing macronutrients based on meal photographs had increased significantly after using the app. Strong player-avatar-identification (PAID) and increased utilization of the crowdsourced community board (where the crowd had voted and reasoned with what they considered the ``best meal'' of the available options was) were related to users' enjoyment of the app. Interestingly, lower PAID predicted greater recall of nutrition information, independent of prior nutrition knowledge. 
+%Findings suggest PAID may be an important mechanism in learning and highlights how fun, lightweight tools can prompt reflection and recall.
+
+%\subsection{Contributions}
+In summary, the key contributions of this paper are as follows:
+\vspace{-4em}
+\begin{itemize}
+    \item We take the traditional macronutrient meal assessment into an interactive format(?) using gamification features; 
+    \item We implemented this uniquely Human Computer Interaction (HCI) oriented mission in the context of tamagotchi-style gaming and crowdsourced intelligence. All of our code to create the app as well as code for data collection, pre-processing, and extraction are all available on GitHub for distribution; 
+    \item We leverage a social computing platform(?), community board, with ...that were collected from real people (from previous studies) to disseminate nutrition knowledge ``from the crowd'' in the truest sense. 
+\end{itemize}
+
+
+
